@@ -1,6 +1,7 @@
 
 # Pattern 1
 ![](./pattern1.png)
+
 *source:*
 ```js
 function pattern1() {
@@ -18,6 +19,7 @@ function pattern1() {
 ```
 # Pattern 2
 ![](./pattern2.png)
+
 *source:*
 ```js
 function pattern2() {
@@ -34,6 +36,7 @@ function pattern2() {
 
 # Pattern 3
 ![](./pattern3.png)
+
 *source:*
 ```js
 function pattern3() {
