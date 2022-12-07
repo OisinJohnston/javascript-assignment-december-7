@@ -1,8 +1,14 @@
-const nums = [1,2,3,4,5,4,3,2,1]
+function gen_nums(n) {
+    var nums = []
+    for (var i=1; i<n; i++) {nums.push(i)}
+    for (var i=n; i>=1; i--) {nums.push(i)}
+    return nums
+}
 
-function pattern1() {
+
+function pattern1(n) {
     var res = '';
-    nums.forEach((i) => {
+    gen_nums(n).forEach((i) => {
         var line = '';
         for (var j=1; j<=i;j++) {
             line += j;
@@ -13,9 +19,9 @@ function pattern1() {
     return res
 }
 
-function pattern2() {
+function pattern2(n) {
     var res = '*';
-    nums.forEach((i) => {
+    gen_nums(n).forEach((i) => {
         let line = '' ;
         for (let j = 1; j<=i; j++) {line += j;}
         for (let j = i-1;j>=1; j--) {line += j;}
@@ -25,9 +31,9 @@ function pattern2() {
 }
 
 
-function pattern3() {
+function pattern3(n) {
     var res = '\n'
-    nums.forEach((i) => {
+    gen_nums(n).forEach((i) => {
         var line = '';
         for (let j=1; j<i; j++) {
             line += ' ';
@@ -47,6 +53,6 @@ function pattern3() {
     return res
 }
 
-console.log(pattern1())
-console.log(pattern2())
-console.log(pattern3())
+console.log(pattern1(5))
+console.log(pattern2(5))
+console.log(pattern3(5))
